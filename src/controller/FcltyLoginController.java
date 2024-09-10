@@ -19,7 +19,6 @@ public class FcltyLoginController implements Initializable {
     public void initialize (URL location, ResourceBundle resources) {
 
     }
-/*
     resetForm();
 
     private void resetForm () {
@@ -32,7 +31,7 @@ public class FcltyLoginController implements Initializable {
         }
 
     }
-*/
+
 
 }
 

@@ -1,4 +1,4 @@
 package model.entity;
 
-public class Course {
+public class Course implements Persist {
 }

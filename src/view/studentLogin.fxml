@@ -24,7 +24,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="switchLoginBtn" mnemonicParsing="false" prefHeight="45.0" prefWidth="470.0" style="-fx-background-color: #636264;" text="Faculty Login / Student Login" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button fx:id="facultyLogin" mnemonicParsing="false" prefHeight="45.0" prefWidth="470.0" style="-fx-background-color: #636264;" text="Faculty Login" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font name="Bank Gothic Light BT" size="22.0" />
                </font>
@@ -76,6 +76,11 @@
       </HBox>
       <VBox alignment="TOP_CENTER" layoutY="481.0" prefHeight="205.0" prefWidth="1029.0">
          <children>
+            <Button fx:id="submitBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="295.0" style="-fx-background-color: #636264;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="Bank Gothic Light BT" size="37.0" />
+               </font>
+            </Button>
             <Button fx:id="pasRecoBtn" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="294.0" style="-fx-background-color: #636264;" text="Forgot your Password?" textFill="WHITE" />
          </children>
       </VBox>
