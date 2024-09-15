@@ -1,52 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="1169.0" style="-fx-background-color: #d8c5e7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <BorderPane prefHeight="779.0" prefWidth="1169.0">
+      <BorderPane prefHeight="716.0" prefWidth="1100.0">
+         <left>
+            <SplitPane dividerPositions="0.14347826086956522" prefHeight="716.0" prefWidth="232.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="714.0" prefWidth="40.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="714.0" prefWidth="177.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" layoutY="26.0" prefHeight="656.0" prefWidth="203.0">
+                           <children>
+                              <Button mnemonicParsing="false" text="User Information">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" text="Provided Courses">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" text="Take Courses">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" text="Class Schedule">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" text="Term Grades">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" text="Overall Grades">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" text="Ranking Among Peers">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" text="Logout">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </left>
          <center>
-            <TabPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #d8c5e7; -fx-background: #d8c5e7;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
               <tabs>
-                <Tab style="-fx-background-color: #c6aadc;" text="Untitled Tab 1">
+                <Tab text="Student Information">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                   </content>
                 </Tab>
-                <Tab style="-fx-background-color: #c6aadc;" text="Untitled Tab 2">
+                <Tab text="Provided Courses">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                   </content>
                 </Tab>
+                  <Tab text="Pick Courses">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Class Schedule">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Term Grades">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Overall Grades">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Rankings">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="Final Logout Screen">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
               </tabs>
             </TabPane>
          </center>
-         <left>
-            <BorderPane prefHeight="779.0" prefWidth="351.0" BorderPane.alignment="CENTER">
-               <center>
-                  <VBox alignment="TOP_CENTER" prefHeight="546.0" prefWidth="351.0" BorderPane.alignment="CENTER">
-                     <children>
-                        <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="287.0" style="-fx-background-color: #c6aadc;" text="Check Information" />
-                        <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="287.0" style="-fx-background-color: #c6aadc;" text="Take Courses" />
-                        <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="287.0" style="-fx-background-color: #c6aadc;" text="Class Schedule" />
-                     </children>
-                  </VBox>
-               </center>
-               <top>
-                  <Pane prefHeight="68.0" prefWidth="351.0" BorderPane.alignment="CENTER" />
-               </top>
-               <bottom>
-                  <Pane prefHeight="68.0" prefWidth="351.0" BorderPane.alignment="CENTER" />
-               </bottom>
-            </BorderPane>
-         </left>
       </BorderPane>
    </children>
 </AnchorPane>
