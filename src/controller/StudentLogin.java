@@ -19,5 +19,4 @@ public class StudentLogin implements Initializable {
     public void initialize (URL Location, ResourceBundle resources) {
 
     }
-    
 }
