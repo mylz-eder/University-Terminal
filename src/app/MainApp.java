@@ -10,7 +10,7 @@ public class MainApp extends Application {
 
     public void start (Stage primaryStage) {
     try {
-        Parent root = FXMLLoader.load (getClass().getResource( "/view/mainPage.fxml"));
+        Parent root = FXMLLoader.load (getClass().getResource("/view/mk1/mainPage.fxml"));
         Scene scene = new Scene(root);
         // deploy the scene.
 

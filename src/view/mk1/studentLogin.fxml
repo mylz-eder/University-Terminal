@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -12,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="686.0" prefWidth="1029.0" style="-fx-background-color: #636264;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FcltyLoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="686.0" prefWidth="1029.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentLogin">
    <children>
       <GridPane layoutY="125.0" prefHeight="45.0" prefWidth="1029.0">
         <columnConstraints>
@@ -24,9 +25,9 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="studentLogin" mnemonicParsing="false" prefHeight="45.0" prefWidth="470.0" style="-fx-background-color: #636264;" text="Student Login" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button fx:id="facultyLoginBtn" mnemonicParsing="false" prefHeight="45.0" prefWidth="470.0" style="-fx-background-color: transparent;" text="Faculty Login" textAlignment="CENTER" textFill="#321be4" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
-                  <Font name="Bank Gothic Light BT" size="22.0" />
+                  <Font name="Segoe UI Historic" size="25.0" />
                </font>
             </Button>
          </children>
@@ -44,16 +45,16 @@
          <children>
             <Label text="Username / Email" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BASELINE">
                <font>
-                  <Font name="Corbel" size="46.0" />
+                  <Font name="Segoe UI Historic" size="35.0" />
                </font>
             </Label>
             <Label text="Password" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BASELINE">
                <font>
-                  <Font name="Corbel" size="46.0" />
+                  <Font name="Segoe UI Historic" size="35.0" />
                </font>
             </Label>
-            <TextField fx:id="userNameTxt" prefHeight="57.0" prefWidth="501.0" promptText="Provide your Username Or Email Here" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="passWordTxt" prefHeight="56.0" prefWidth="501.0" promptText="Submit Your Password Here" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="usernameTxt" prefHeight="57.0" prefWidth="501.0" promptText="Provide your Username Or Email Here" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="passwordTxt" prefHeight="56.0" prefWidth="501.0" promptText="Submit Your Password Here" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <HBox layoutY="34.0" prefHeight="91.0" prefWidth="1029.0">
@@ -65,9 +66,9 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="104.0" prefWidth="438.0">
                <children>
-                  <Label text="Faculty Login:" textFill="WHITE">
+                  <Label text="Student Login:" textFill="WHITE">
                      <font>
-                        <Font name="Bauhaus 93" size="58.0" />
+                        <Font name="Segoe UI Semibold" size="55.0" />
                      </font>
                   </Label>
                </children>
@@ -76,12 +77,18 @@
       </HBox>
       <VBox alignment="TOP_CENTER" layoutY="481.0" prefHeight="205.0" prefWidth="1029.0">
          <children>
-            <Button fx:id="submitBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="295.0" style="-fx-background-color: #636264;" text="Submit" textFill="WHITE">
+            <Button fx:id="signInBtn" cache="true" cacheHint="QUALITY" mnemonicParsing="false" prefHeight="75.0" prefWidth="158.0" style="-fx-background-color: #3C3D3D;" text="Sign In" textFill="#cde41b">
                <font>
-                  <Font name="Bank Gothic Light BT" size="37.0" />
+                  <Font name="Segoe UI Semibold Italic" size="35.0" />
                </font>
+               <effect>
+                  <DropShadow height="26.93" radius="15.1875" spread="0.17" width="35.82" />
+               </effect>
             </Button>
-            <Button fx:id="passRecoBtn" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="294.0" style="-fx-background-color: #636264;" text="Forgot your Password?" textFill="WHITE" />
+            <Button fx:id="pasRecoveryBtn" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="294.0" style="-fx-background-color: transparent;" text="Forgot your Password?" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Button>
          </children>
       </VBox>
    </children>

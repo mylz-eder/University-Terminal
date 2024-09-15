@@ -1,20 +1,23 @@
 package model.entity;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
+import com.google.gson.Gson;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
 
-public abstract class Person implements Persist{
+@Getter
+@Setter
+@NoArgsConstructor
+@SuperBuilder
 
-    @Getter
-    @Setter
-    @NoArgsConstructor
-    @SuperBuilder
+public abstract class Person {
 
     private String name;
     private LocalDate birthDate;
 
+    public String toString () {return new Gson().toJson(this);
+    }
 }
