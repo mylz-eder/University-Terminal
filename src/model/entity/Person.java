@@ -15,8 +15,9 @@ import java.time.LocalDate;
 
 public abstract class Person {
 
-    private String name;
-    private LocalDate birthDate;
+    private int id;
+    private String userName, password, firstName, lastName, phoneNumber, socialSecurity, email, address;
+    private LocalDate birthDate, createdAt, lastAlteredAt;
 
     public String toString () {return new Gson().toJson(this);
     }

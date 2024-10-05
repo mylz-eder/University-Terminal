@@ -20,8 +20,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="1224.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FacultyTerminal">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="1224.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FacultyTerminalController">
    <children>
       <BorderPane prefHeight="799.0" prefWidth="1224.0">
          <left>
@@ -89,7 +88,136 @@
               <tabs>
                 <Tab fx:id="userInformationTab" text="User Information">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane prefHeight="770.0" prefWidth="999.0">
+                                 <left>
+                                    <Pane prefWidth="80.0" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Pane prefWidth="80.0" BorderPane.alignment="CENTER" />
+                                 </right>
+                                 <center>
+                                    <GridPane BorderPane.alignment="CENTER">
+                                      <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="ID" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Username" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Firstname" GridPane.rowIndex="5">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Lastname" GridPane.rowIndex="6">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Phone Number" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Email" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Social Security" GridPane.rowIndex="8">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Birthdate" GridPane.rowIndex="9">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Address" GridPane.rowIndex="7">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Account Made At" GridPane.rowIndex="11">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Last Altered At" GridPane.rowIndex="12">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Role" GridPane.rowIndex="10">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField id="userIdTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField id="userNameTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <TextField id="userPhoneNumberTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <TextField id="userEmailTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <TextField id="userFirstNameTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <TextField id="userLastNameTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <TextField id="userAddressTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                          <TextField id="userSocialSecurityTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                          <TextField id="userBirthdayTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                          <TextField id="userRoleTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                          <TextField id="userMadeAtTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                          <TextField id="userLastAlteredAtTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                       </children>
+                                    </GridPane>
+                                 </center>
+                                 <bottom>
+                                    <BorderPane prefHeight="100.0" prefWidth="999.0" BorderPane.alignment="CENTER">
+                                       <center>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="111.0" text="Edit" HBox.hgrow="NEVER">
+                                                   <font>
+                                                      <Font name="Segoe UI Semibold" size="29.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </center>
+                                       <right>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                       </right>
+                                       <left>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                       </left>
+                                    </BorderPane>
+                                 </bottom>
+                              </BorderPane>
+                           </children></AnchorPane>
                   </content>
                 </Tab>
                 <Tab fx:id="FacultyManegmentTab" text="Faculty Manegment">
@@ -104,7 +232,42 @@
                   </Tab>
                   <Tab fx:id="studentsManegmentTab" text="Student Manegment">
                      <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane prefHeight="774.0" prefWidth="1002.0">
+                                 <bottom>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                 </bottom>
+                                 <center>
+                                    <TableView prefHeight="674.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                    </TableView>
+                                 </center>
+                                 <left>
+                                    <BorderPane prefHeight="674.0" prefWidth="277.0" BorderPane.alignment="CENTER">
+                                       <center>
+                                          <GridPane BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                          </GridPane>
+                                       </center>
+                                       <bottom>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                       </bottom>
+                                    </BorderPane>
+                                 </left>
+                              </BorderPane>
+                           </children></AnchorPane>
                      </content>
                   </Tab>
                   <Tab fx:id="courseTablesTab" text="Course Tables">
@@ -326,7 +489,7 @@
                            <children>
                               <BorderPane prefHeight="772.0" prefWidth="1001.0">
                                  <center>
-                                    <TableView prefHeight="639.0" prefWidth="712.0" BorderPane.alignment="CENTER">
+                                    <TableView prefHeight="672.0" prefWidth="764.0" BorderPane.alignment="CENTER">
                                       <columns>
                                         <TableColumn prefWidth="34.0" text="ID" />
                                         <TableColumn prefWidth="73.0" text="First Name" />

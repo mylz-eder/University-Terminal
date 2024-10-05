@@ -7,7 +7,7 @@ import javafx.scene.control.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class StudentLogin implements Initializable {
+public class StudentLoginController implements Initializable {
 
     @FXML
     private TextField usernameTxt, passwordTxt;

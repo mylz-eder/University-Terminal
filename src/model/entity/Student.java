@@ -17,15 +17,9 @@ import java.time.LocalDate;
 @ToString
 
 
-public class Student{
+public class Student extends Person {
 
-
-    private
-    private String registrationNumber;
-    private String program;
-    private String name;
-    private LocalDate birthDate;
-
+    private int access = 3;
     public String toString () {
         return new Gson().toJson(this);
     }
