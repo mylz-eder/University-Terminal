@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="1224.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FacultyTerminalController">
+   <children>
+      <BorderPane prefHeight="799.0" prefWidth="1224.0">
+         <left>
+            <SplitPane dividerPositions="0.16602316602316602" prefHeight="768.0" prefWidth="224.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="766.0" prefWidth="162.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" layoutY="26.0" prefHeight="702.0" prefWidth="179.0">
+                           <children>
+                              <Button fx:id="userInformationBtn" mnemonicParsing="false" text="User Information">
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="facultyManegmentBtn" mnemonicParsing="false" text="Faculty Manegment">
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="teachersManegmentBtn" mnemonicParsing="false" text="Teachers Manegment">
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="studentManegmentBtn" mnemonicParsing="false" text="Student Manegment">
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="courseTableBtn" mnemonicParsing="false" text="Course Tables">
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="courseProvisionBtn" mnemonicParsing="false" text="Course Provision">
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="teacherRequestsBtn" mnemonicParsing="false" text="Teacher Requests">
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="submitGradesBtn" mnemonicParsing="false" text="Submit Grades">
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="logoutBtn" mnemonicParsing="false" text="Logout">
+                                 <VBox.margin>
+                                    <Insets top="45.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </left>
+         <center>
+            <TabPane prefHeight="768.0" prefWidth="977.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab fx:id="userInformationTab" text="User Information">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane prefHeight="770.0" prefWidth="999.0">
+                                 <left>
+                                    <Pane prefWidth="80.0" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Pane prefWidth="80.0" BorderPane.alignment="CENTER" />
+                                 </right>
+                                 <center>
+                                    <GridPane BorderPane.alignment="CENTER">
+                                      <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="ID" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Username" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Firstname" GridPane.rowIndex="5">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Lastname" GridPane.rowIndex="6">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Phone Number" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Email" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Social Security" GridPane.rowIndex="8">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Birthdate" GridPane.rowIndex="9">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Address" GridPane.rowIndex="7">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Account Made At" GridPane.rowIndex="11">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Last Altered At" GridPane.rowIndex="12">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Role" GridPane.rowIndex="10">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField id="userIdTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField id="userNameTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <TextField id="userPhoneNumberTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <TextField id="userEmailTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <TextField id="userFirstNameTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <TextField id="userLastNameTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <TextField id="userAddressTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                          <TextField id="userSocialSecurityTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                          <TextField id="userBirthdayTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                          <TextField id="userRoleTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                          <TextField id="userMadeAtTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                          <TextField id="userLastAlteredAtTxt" prefHeight="38.0" prefWidth="419.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                       </children>
+                                    </GridPane>
+                                 </center>
+                                 <bottom>
+                                    <BorderPane prefHeight="100.0" prefWidth="999.0" BorderPane.alignment="CENTER">
+                                       <center>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <Button alignment="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="111.0" text="Edit" HBox.hgrow="NEVER">
+                                                   <font>
+                                                      <Font name="Segoe UI Semibold" size="29.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </center>
+                                       <right>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                       </right>
+                                       <left>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                       </left>
+                                    </BorderPane>
+                                 </bottom>
+                              </BorderPane>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="FacultyManegmentTab" text="Faculty Manegment">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+                  <Tab fx:id="teachersManegmentTab" text="Teachers Manegment">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </content>
+                  </Tab>
+                  <Tab fx:id="studentsManegmentTab" text="Student Manegment">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane prefHeight="774.0" prefWidth="1002.0">
+                                 <bottom>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                 </bottom>
+                                 <center>
+                                    <TableView prefHeight="674.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                    </TableView>
+                                 </center>
+                                 <left>
+                                    <BorderPane prefHeight="674.0" prefWidth="277.0" BorderPane.alignment="CENTER">
+                                       <center>
+                                          <GridPane BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                          </GridPane>
+                                       </center>
+                                       <bottom>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                       </bottom>
+                                    </BorderPane>
+                                 </left>
+                              </BorderPane>
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="courseTablesTab" text="Course Tables">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane prefHeight="773.0" prefWidth="1001.0">
+                                 <left>
+                                    <BorderPane prefHeight="673.0" prefWidth="283.0" BorderPane.alignment="CENTER">
+                                       <center>
+                                          <GridPane prefHeight="543.0" prefWidth="274.0" BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label text="ID" />
+                                                <Label text="Name" GridPane.rowIndex="2" />
+                                                <Label text="Code" GridPane.rowIndex="1" />
+                                                <Label text="Credit Value" GridPane.rowIndex="3" />
+                                                <TextField fx:id="courseCreditValue" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <TextField fx:id="courseName" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <TextField fx:id="courseCode" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <TextField fx:id="courseId" editable="false" GridPane.columnIndex="1" />
+                                                <Label text="Pre-Requisit" GridPane.rowIndex="4" />
+                                                <Label text="Contrary-to" GridPane.rowIndex="5" />
+                                                <ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                             </children>
+                                             <BorderPane.margin>
+                                                <Insets right="15.0" top="30.0" />
+                                             </BorderPane.margin>
+                                          </GridPane>
+                                       </center>
+                                       <bottom>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <Button fx:id="saveBtn1" mnemonicParsing="false" prefHeight="38.0" prefWidth="52.0" text="Save">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button fx:id="editBtn1" mnemonicParsing="false" prefHeight="38.0" prefWidth="52.0" text="Edit">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button fx:id="deleteBtn1" mnemonicParsing="false" prefHeight="38.0" prefWidth="52.0" text="Delete">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </bottom>
+                                    </BorderPane>
+                                 </left>
+                                 <center>
+                                    <TableView prefHeight="673.0" prefWidth="755.0" BorderPane.alignment="CENTER">
+                                      <columns>
+                                        <TableColumn prefWidth="41.0" text="ID" />
+                                        <TableColumn prefWidth="126.0" text="Code" />
+                                          <TableColumn prefWidth="107.0" text="Name" />
+                                          <TableColumn minWidth="2.0" prefWidth="72.0" text="Credit" />
+                                          <TableColumn prefWidth="183.0" text="Pre-Requisit" />
+                                          <TableColumn prefWidth="188.0" text="Contrary-to" />
+                                      </columns>
+                                    </TableView>
+                                 </center>
+                                 <bottom>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                 </bottom>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="courseProvisionTab" text="Course Provision">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane prefHeight="773.0" prefWidth="1001.0">
+                                 <left>
+                                    <BorderPane prefHeight="673.0" prefWidth="281.0" BorderPane.alignment="CENTER">
+                                       <center>
+                                          <GridPane prefHeight="543.0" prefWidth="274.0" BorderPane.alignment="CENTER">
+                                             <columnConstraints>
+                                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label text="ID" />
+                                                <Label text="Name" GridPane.rowIndex="2" />
+                                                <Label text="Code" GridPane.rowIndex="1" />
+                                                <Label text="Credit Value" GridPane.rowIndex="3" />
+                                                <Label text="Class Count" GridPane.rowIndex="4" />
+                                                <Label text="Course Period" GridPane.rowIndex="6" />
+                                                <Label text="Course Period (If Extra)" GridPane.rowIndex="7" />
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                                                   <children>
+                                                      <ComboBox fx:id="coursePeriodDayCmBox11" prefWidth="150.0">
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                      </ComboBox>
+                                                      <ComboBox fx:id="coursePeriodTimeCmBox11" prefWidth="150.0">
+                                                         <VBox.margin>
+                                                            <Insets top="7.0" />
+                                                         </VBox.margin>
+                                                      </ComboBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                                   <children>
+                                                      <ComboBox fx:id="coursePeriodDayCmBox21" prefWidth="150.0">
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                      </ComboBox>
+                                                      <ComboBox fx:id="coursePeriodTimeCmBox21" prefWidth="150.0">
+                                                         <VBox.margin>
+                                                            <Insets top="7.0" />
+                                                         </VBox.margin>
+                                                      </ComboBox>
+                                                   </children>
+                                                </VBox>
+                                                <TextField fx:id="Num1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <TextField fx:id="courseCreditValue1" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <TextField fx:id="courseName1" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <TextField fx:id="courseCode1" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <TextField fx:id="courseId1" editable="false" GridPane.columnIndex="1" />
+                                                <Label text="Provided Class" GridPane.rowIndex="5" />
+                                                <ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                             </children>
+                                             <BorderPane.margin>
+                                                <Insets right="10.0" top="35.0" />
+                                             </BorderPane.margin>
+                                          </GridPane>
+                                       </center>
+                                       <bottom>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <Button fx:id="courseProvideBtn" mnemonicParsing="false" prefHeight="38.0" prefWidth="52.0" text="Save">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button fx:id="courseProviedBtn" mnemonicParsing="false" prefHeight="38.0" prefWidth="52.0" text="Edit">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button fx:id="courseProvideDeleteBtn" mnemonicParsing="false" prefHeight="38.0" prefWidth="52.0" text="Delete">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </bottom>
+                                    </BorderPane>
+                                 </left>
+                                 <bottom>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                 </bottom>
+                                 <center>
+                                    <TableView prefHeight="673.0" prefWidth="755.0" BorderPane.alignment="CENTER">
+                                       <columns>
+                                          <TableColumn prefWidth="41.0" text="ID" />
+                                          <TableColumn prefWidth="51.0" text="Code" />
+                                          <TableColumn prefWidth="130.0" text="Name" />
+                                          <TableColumn prefWidth="41.0" text="Credit" />
+                                          <TableColumn prefWidth="48.0" text="Count" />
+                                          <TableColumn prefWidth="174.0" text="Provided To Class" />
+                                          <TableColumn prefWidth="128.0" text="Course Period (1)" />
+                                          <TableColumn prefWidth="106.0" text="Course Period (2)" />
+                                       </columns>
+                                    </TableView>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="teacherRequestsTab" text="Teacher Requests">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="287.0" layoutY="350.0" text="Under Maintenance">
+                                 <font>
+                                    <Font size="49.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="submitGradesTab" text="Submit Grades">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane prefHeight="772.0" prefWidth="1001.0">
+                                 <center>
+                                    <TableView prefHeight="672.0" prefWidth="764.0" BorderPane.alignment="CENTER">
+                                      <columns>
+                                        <TableColumn prefWidth="34.0" text="ID" />
+                                        <TableColumn prefWidth="73.0" text="First Name" />
+                                          <TableColumn prefWidth="77.0" text="Last Name" />
+                                          <TableColumn prefWidth="66.0" text="Registery" />
+                                          <TableColumn prefWidth="116.0" text="National ID" />
+                                          <TableColumn prefWidth="61.0" text="Course ID" />
+                                          <TableColumn prefWidth="200.0" text="Course Name" />
+                                          <TableColumn prefWidth="105.0" text="Relative Teacher" />
+                                          <TableColumn prefWidth="50.0" text="Grade" />
+                                      </columns>
+                                    </TableView>
+                                 </center>
+                                 <left>
+                                    <BorderPane prefHeight="642.0" prefWidth="218.0" BorderPane.alignment="CENTER">
+                                       <center>
+                                          <GridPane prefHeight="534.0" prefWidth="208.0" BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="101.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="107.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label text="ID" />
+                                                <Label text="Last Name" GridPane.rowIndex="2" />
+                                                <Label text="First Name" GridPane.rowIndex="1" />
+                                                <Label text="Registery" GridPane.rowIndex="3" />
+                                                <Label text="National ID" GridPane.rowIndex="4" />
+                                                <Label text="Course ID" GridPane.rowIndex="5" />
+                                                <Label text="Grade" GridPane.rowIndex="8" />
+                                                <Label text="Course Name" GridPane.rowIndex="6" />
+                                                <Label text="Teacher" GridPane.rowIndex="7" />
+                                                <TextField fx:id="studentIdTxt" editable="false" GridPane.columnIndex="1" />
+                                                <TextField fx:id="firstNameTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <TextField fx:id="lastNameTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <TextField fx:id="studentRegisteryTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <TextField fx:id="studentNationalIdTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <TextField fx:id="courseIdTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                <TextField fx:id="courseNameTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                <TextField fx:id="teacherNameTxt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                                <TextField fx:id="gradeTxt" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                             </children>
+                                             <BorderPane.margin>
+                                                <Insets right="10.0" top="10.0" />
+                                             </BorderPane.margin>
+                                          </GridPane>
+                                       </center>
+                                       <bottom>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <Button fx:id="gradeSaveBtn" mnemonicParsing="false" prefHeight="38.0" prefWidth="52.0" text="Save">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button fx:id="gradeEditBtn" mnemonicParsing="false" prefHeight="38.0" prefWidth="52.0" text="Edit">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button fx:id="gradeDeleteBtn" mnemonicParsing="false" prefHeight="38.0" prefWidth="52.0" text="Delete">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </bottom>
+                                    </BorderPane>
+                                 </left>
+                                 <bottom>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                 </bottom>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="logoutScreenTab" text="Logout Screen">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane layoutY="-1.0" prefHeight="774.0" prefWidth="999.0">
+                                 <top>
+                                    <Label text="Are you certain you want to log out??" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="37.0" />
+                                       </font>
+                                       <BorderPane.margin>
+                                          <Insets top="80.0" />
+                                       </BorderPane.margin>
+                                    </Label>
+                                 </top>
+                                 <center>
+                                    <GridPane prefHeight="468.0" prefWidth="730.0" BorderPane.alignment="CENTER">
+                                      <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="41.0" />
+                                        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Button fx:id="finalLogoutBtn" mnemonicParsing="false" prefHeight="54.0" prefWidth="171.0" text="Log Out" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="Segoe UI" size="22.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="remainSignedBtn" mnemonicParsing="false" prefHeight="54.0" prefWidth="197.0" text="Stay Signed in" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                             <font>
+                                                <Font name="Segoe UI" size="22.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </GridPane>
+                                 </center>
+                                 <left>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <bottom>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                 </bottom>
+                                 <right>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

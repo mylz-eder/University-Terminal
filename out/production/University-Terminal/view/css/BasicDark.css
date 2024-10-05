@@ -1,0 +1,77 @@
+/* Dark Theme for JavaFX Scene */
+.root {
+    -fx-background-color: #2b2b2b; /* Dark background color */
+    -fx-text-fill: #d3d3d3;        /* Light text color */
+}
+
+/* Style for buttons */
+.button {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: #d3d3d3;
+    -fx-border-color: #5c5f61;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 8 15;
+}
+
+.button:hover {
+    -fx-background-color: #4b4f51;
+}
+
+/* Style for text fields */
+.text-field {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: #d3d3d3;
+    -fx-border-color: #5c5f61;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+/* Style for labels */
+.label {
+    -fx-text-fill: #d3d3d3;
+}
+
+/* Style for list views, tables, and other containers */
+.list-view, .table-view, .combo-box {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: #d3d3d3;
+    -fx-border-color: #5c5f61;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #2b2b2b;
+}
+
+/* Style for scrollbars */
+.scroll-bar {
+    -fx-background-color: #3c3f41;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #5c5f61;
+}
+
+/* Style for tooltips */
+.tooltip {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: #d3d3d3;
+}
+
+/* Style for menu bars */
+.menu-bar {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: #d3d3d3;
+}
+
+.menu-item {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #d3d3d3;
+}
+
+/* For text areas */
+.text-area {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: #d3d3d3;
+    -fx-border-color: #5c5f61;
+}

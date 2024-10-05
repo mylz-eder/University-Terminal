@@ -30,4 +30,5 @@ public class MainController implements Initializable {
         private void openFacultyLogin () {
         new FacultyLoginApp().start(new Stage());
         }
+
 }
